@@ -1,0 +1,17 @@
+body {
+  font-family: "Forum", cursive;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.center {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */
