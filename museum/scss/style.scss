@@ -7,8 +7,63 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-.center {
+.container {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+}
+.section {
+  padding: 75px 0;
+}
+.dark__section {
+  background: #030303;
+}
+.video__section {
+  padding: 90px 0 75px 0;
+}
+
+//Header
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    h4 {
+      display: inline-block;
+      font-family: "Forum", cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 50px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin: 74px 0 0 20px;
+    }
+  }
+  .link__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 720px;
+    padding: 0;
+    .item {
+      list-style: none;
+      padding-left: 76px;
+      a {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 22px;
+        line-height: 50px;
+        letter-spacing: 2px;
+        color: #ffffff;
+        text-decoration: none;
+      }
+    }
+    .item:first-child {
+      padding-left: 0;
+    }
+  }
 }
