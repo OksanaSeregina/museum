@@ -21,13 +21,35 @@ body {
 .video__section {
   padding: 90px 0 75px 0;
 }
+.section__title-dark {
+  font-family: "Forum", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+}
+.section__title {
+  font-family: "Forum", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #9d8665;
+}
 
 //Header
 
 .header__container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
+  padding-bottom: 75px;
   .logo {
     h4 {
       display: inline-block;
@@ -48,6 +70,7 @@ body {
     align-items: center;
     max-width: 720px;
     padding: 0;
+    margin: 0;
     .item {
       list-style: none;
       padding-left: 76px;
@@ -64,6 +87,49 @@ body {
     }
     .item:first-child {
       padding-left: 0;
+    }
+  }
+}
+
+// Section Welcom
+
+.welcome {
+  height: 100%;
+  background-image: url(../assets/img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  .title__welcome {
+    margin-top: 114px;
+  }
+  .text__welcome {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 2px;
+    color: #ffffff;
+  }
+  .button__welcome {
+    a {
+      text-decoration: none;
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 22px;
+      line-height: 26px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 2px;
+      color: #ffffff;
+      background: #710707;
+      border-radius: 10px;
+      padding: 24.5px 67.7px;
+      display: inline-block;
+      margin-top: 48px;
+      transition: 0.5s;
+      margin-bottom: 171px;
     }
   }
 }
