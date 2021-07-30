@@ -133,3 +133,66 @@ body {
     }
   }
 }
+
+// Section Visiting
+
+.visiting {
+  .underline__section-title {
+    padding-bottom: 25px;
+    border-bottom: solid 3px #710707;
+  }
+  .cart__visiting {
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 78px;
+    .cart__link {
+      display: block;
+      text-decoration: none;
+      img {
+        width: 440px;
+        height: 285px;
+      }
+      .underline__title {
+        font-family: "Forum", cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 35px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: #000000;
+        margin: 0;
+        margin-top: 25px;
+        position: relative;
+      }
+      .underline__title::after {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        right: 32%;
+        height: 2px;
+        background-color: #710707;
+      }
+      .text__visiting {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 22px;
+        line-height: 26px;
+        color: #000000;
+        margin-bottom: 0;
+      }
+      .small__text-visiting {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+      }
+    }
+  }
+}

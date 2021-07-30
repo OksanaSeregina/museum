@@ -157,4 +157,74 @@ body {
   transition: 0.5s;
   margin-bottom: 171px;
 }
+
+.visiting .underline__section-title {
+  padding-bottom: 25px;
+  border-bottom: solid 3px #710707;
+}
+
+.visiting .cart__visiting {
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 60px;
+          column-gap: 60px;
+  row-gap: 78px;
+}
+
+.visiting .cart__visiting .cart__link {
+  display: block;
+  text-decoration: none;
+}
+
+.visiting .cart__visiting .cart__link img {
+  width: 440px;
+  height: 285px;
+}
+
+.visiting .cart__visiting .cart__link .underline__title {
+  font-family: "Forum", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  margin-top: 25px;
+  position: relative;
+}
+
+.visiting .cart__visiting .cart__link .underline__title::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 32%;
+  height: 2px;
+  background-color: #710707;
+}
+
+.visiting .cart__visiting .cart__link .text__visiting {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.visiting .cart__visiting .cart__link .small__text-visiting {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
 /*# sourceMappingURL=style.css.map */
