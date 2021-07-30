@@ -220,11 +220,63 @@ body {
 }
 
 .visiting .cart__visiting .cart__link .small__text-visiting {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 200;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+  margin-top: 0;
+}
+
+.explore .container__explore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.explore .container__explore .explore__left {
+  width: 50%;
+  padding-right: 60px;
+}
+
+.explore .container__explore .explore__left .section__title-dark {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.explore .container__explore .explore__left .section__title-dark::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #710707;
+}
+
+.explore .container__explore .explore__left .text__explore {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  color: #ffffff;
+}
+
+.explore .container__explore .explore__left .text__explore span {
+  color: #caaa7d;
+}
+
+.explore .container__explore .explore__right {
+  width: 50%;
+  padding-top: 15px;
+}
+
+.explore .container__explore .explore__right img {
+  width: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
