@@ -131,10 +131,58 @@
       </section>
 
       <section class="video video__section container" id="video">
-        <img src="./assets/img/Poster.jpg" alt="poster" />
+        <img class="poster" src="./assets/img/Poster.jpg" alt="poster" />
+        <!-- <div class="button__play">
+          <img src="./assets/svg/Play.svg" alt="play" />
+        </div> -->
+
+        <div class="video__input">
+          <div><img src="./assets/svg/Left.svg" alt="left" /></div>
+          <div><img src="./assets/svg/Frame.svg" alt="frame" /></div>
+          <div><img src="./assets/svg/Right.svg" alt="right" /></div>
+          <div>
+            <input
+              class="all__video"
+              type="range"
+              id="volume"
+              name="volume"
+              min="0"
+              max="100"
+            />
+          </div>
+          <div><img src="./assets/svg/Volume.svg" alt="volume" /></div>
+          <div>
+            <input
+              class="volume"
+              type="range"
+              id="volume"
+              name="volume"
+              min="0"
+              max="100"
+            />
+          </div>
+          <div><img src="./assets/svg/Full.svg" alt="full" /></div>
+        </div>
+
+        <div class="text__video">
+          <div class="left__text-video">
+            <h2 class="section__title">Video journey</h2>
+          </div>
+
+          <div class="right__text-video">
+            <p class="text__explore">
+              Enter and visit one of the most famous museums in the world and
+              enjoy masterpieces such as Mona Lisa or Hammurabi's Code
+            </p>
+          </div>
+        </div>
       </section>
 
-      <section class="tickets section dark__section" id="tickets"></section>
+      <section class="tickets section dark__section" id="tickets">
+        <div class="container">
+          <h2 class="section__title-dark">Picture explore</h2>
+        </div>
+      </section>
 
       <section class="contacts section" id="contacts"></section>
     </main>
