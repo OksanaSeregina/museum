@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Forum", cursive;
   font-family: "Roboto", sans-serif;
@@ -287,6 +290,45 @@ body {
       width: 50%;
       .text__explore {
         color: #000000;
+      }
+    }
+  }
+}
+
+// Section Tickets
+
+.tickets {
+  .section__title-dark {
+    position: relative;
+    margin-bottom: 100px;
+  }
+  .section__title-dark::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: var(--dark-red);
+  }
+  .info__tickets {
+    display: flex;
+    .left__tickets {
+      width: 50%;
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+    .right__tickets {
+      width: 50%;
+      .title__ticket {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 33px;
+        color: #ffffff;
       }
     }
   }

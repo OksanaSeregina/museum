@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Forum", cursive;
   font-family: "Roboto", sans-serif;
@@ -344,5 +348,48 @@ body {
 
 .video .text__video .right__text-video .text__explore {
   color: #000000;
+}
+
+.tickets .section__title-dark {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.tickets .section__title-dark::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--dark-red);
+}
+
+.tickets .info__tickets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tickets .info__tickets .left__tickets {
+  width: 50%;
+}
+
+.tickets .info__tickets .left__tickets img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.tickets .info__tickets .right__tickets {
+  width: 50%;
+}
+
+.tickets .info__tickets .right__tickets .title__ticket {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
