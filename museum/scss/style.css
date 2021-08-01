@@ -3,8 +3,8 @@ html {
 }
 
 body {
-  font-family: "Forum", cursive;
   font-family: "Roboto", sans-serif;
+  font-style: normal;
 }
 
 .wrapper {
@@ -19,7 +19,9 @@ body {
   margin: 0 auto;
 }
 
-.section {
+header,
+.section,
+footer {
   padding: 75px 0;
 }
 
@@ -71,11 +73,27 @@ section:hover .section__title-dark {
 }
 
 .text__explore {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 300;
   font-size: var(--font22);
   line-height: 38px;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.logo a h4 {
+  display: inline-block;
+  font-family: "Forum", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--font28);
+  line-height: 50px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  margin-left: 20px;
 }
 
 .header__container {
@@ -88,20 +106,6 @@ section:hover .section__title-dark {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding-bottom: 75px;
-}
-
-.header__container .logo h4 {
-  display: inline-block;
-  font-family: "Forum", cursive;
-  font-style: normal;
-  font-weight: normal;
-  font-size: var(--font28);
-  line-height: 50px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin: 74px 0 0 20px;
 }
 
 .header__container .link__menu {
@@ -125,8 +129,6 @@ section:hover .section__title-dark {
 }
 
 .header__container .link__menu .item a {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 200;
   font-size: var(--font22);
   line-height: 50px;
@@ -137,6 +139,11 @@ section:hover .section__title-dark {
 
 .header__container .link__menu .item:first-child {
   padding-left: 0;
+}
+
+.header__container .link__menu .item:hover a,
+.header__container .link__menu .item:active a {
+  color: var(--font-gold);
 }
 
 .welcome {
@@ -152,8 +159,6 @@ section:hover .section__title-dark {
 }
 
 .welcome .text__welcome {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 300;
   font-size: var(--font28);
   line-height: 33px;
@@ -167,8 +172,6 @@ section:hover .section__title-dark {
 
 .welcome .button__welcome a {
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 200;
   font-size: var(--font22);
   line-height: 26px;
@@ -248,8 +251,6 @@ section:hover .section__title-dark {
 }
 
 .visiting .cart__visiting .cart__link .text__visiting {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 200;
   font-size: var(--font22);
   line-height: 26px;
@@ -258,8 +259,6 @@ section:hover .section__title-dark {
 }
 
 .visiting .cart__visiting .cart__link .small__text-visiting {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 200;
   font-size: var(--font18);
   line-height: 21px;
@@ -412,8 +411,6 @@ section:hover .section__title-dark {
 }
 
 .tickets .info__tickets .right__tickets .radio-button .title__ticket {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: var(--font28);
   line-height: 33px;
@@ -422,8 +419,6 @@ section:hover .section__title-dark {
 }
 
 .tickets .info__tickets .right__tickets .radio-button .input-radio {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 300;
   font-size: var(--font22);
   line-height: 26px;
@@ -517,11 +512,6 @@ section:hover .section__title-dark {
       grid-template-columns: 1fr 2fr;
 }
 
-.contacts .contacts-content .left-content {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-}
-
 .contacts .contacts-content .left-content .title-contacts {
   margin: 0;
   font-weight: 500;
@@ -562,5 +552,69 @@ section:hover .section__title-dark {
 .contacts .contacts-content .right-content img {
   width: 100%;
   max-width: 100%;
+}
+
+.footer .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.footer .container .links-footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.footer .container .links-footer .list-footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: (50px)[3];
+      grid-template-rows: repeat(3, 50px);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .container .links-footer .list-footer .item a {
+  text-decoration: none;
+  font-weight: 200;
+  font-size: var(--font22);
+  line-height: 50px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.footer .container .links-footer .list-footer .item:nth-child(even) {
+  padding-left: 70px;
+}
+
+.footer .container .links-footer .list-footer .item:hover a,
+.footer .container .links-footer .list-footer .item:active a {
+  color: var(--font-gold);
+}
+
+.footer .container .social-links {
+  justify-self: flex-end;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.footer .container .social-links .icon {
+  border: 1px solid #666666;
+  border-radius: 50px;
+  padding: 12px 14px;
+  margin-left: 24px;
+  margin-bottom: 14px;
+  display: inline-block;
+}
+
+.footer .container .social-links .icon:hover {
+  border: 1px solid var(--font-gold);
 }
 /*# sourceMappingURL=style.css.map */
