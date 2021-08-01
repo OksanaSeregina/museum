@@ -428,10 +428,10 @@ section:hover {
 //Section Contacts
 
 .contacts {
-  position: relative;
   .section__title {
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 75px;
+    margin-top: 0;
   }
   .section__title::after {
     content: "";
@@ -442,8 +442,49 @@ section:hover {
     height: 3px;
     background-color: var(--dark-red);
   }
-  img {
-    position: absolute;
-    right: 0;
+  .contacts-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    .left-content {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      .title-contacts {
+        margin: 0;
+        font-weight: 500;
+        font-size: var(--font28);
+        line-height: 33px;
+      }
+      .title-contacts:first-child {
+        margin-top: 10px;
+      }
+      nav {
+        .contact {
+          list-style: none;
+          padding: 0;
+          margin-top: 36px;
+          li,
+          a {
+            font-weight: 300;
+            font-size: var(--font22);
+            line-height: 26px;
+            margin-bottom: 20px;
+            p {
+              display: inline-block;
+              margin: 0;
+            }
+            a {
+              text-decoration: none;
+              color: #000000;
+            }
+          }
+        }
+      }
+    }
+    .right-content {
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
   }
 }

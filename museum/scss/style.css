@@ -494,13 +494,10 @@ section:hover .section__title-dark {
   font-weight: 600;
 }
 
-.contacts {
-  position: relative;
-}
-
 .contacts .section__title {
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 75px;
+  margin-top: 0;
 }
 
 .contacts .section__title::after {
@@ -513,8 +510,57 @@ section:hover .section__title-dark {
   background-color: var(--dark-red);
 }
 
-.contacts img {
-  position: absolute;
-  right: 0;
+.contacts .contacts-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+}
+
+.contacts .contacts-content .left-content {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.contacts .contacts-content .left-content .title-contacts {
+  margin: 0;
+  font-weight: 500;
+  font-size: var(--font28);
+  line-height: 33px;
+}
+
+.contacts .contacts-content .left-content .title-contacts:first-child {
+  margin-top: 10px;
+}
+
+.contacts .contacts-content .left-content nav .contact {
+  list-style: none;
+  padding: 0;
+  margin-top: 36px;
+}
+
+.contacts .contacts-content .left-content nav .contact li,
+.contacts .contacts-content .left-content nav .contact a {
+  font-weight: 300;
+  font-size: var(--font22);
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+.contacts .contacts-content .left-content nav .contact li p,
+.contacts .contacts-content .left-content nav .contact a p {
+  display: inline-block;
+  margin: 0;
+}
+
+.contacts .contacts-content .left-content nav .contact li a,
+.contacts .contacts-content .left-content nav .contact a a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.contacts .contacts-content .right-content img {
+  width: 100%;
+  max-width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
