@@ -188,22 +188,59 @@
             </div>
 
             <div class="right__tickets">
-              <h4 class="title__ticket">Ticket Type</h4>
-              <label class="ticket__type"
-                >Permanent exhibition
-                <input type="radio" checked="checked" name="radio" />
-                <span class="checkmark"></span>
-              </label>
-              <label class="container"
-                >Temporary exhibition
-                <input type="radio" name="radio" />
-                <span class="checkmark"></span>
-              </label>
-              <label class="container"
-                >Combined Admission
-                <input type="radio" name="radio" />
-                <span class="checkmark"></span>
-              </label>
+              <form class="radio-button">
+                <h4 class="title__ticket">Ticket Type</h4>
+                <div class="input-radio">
+                  <div class="item">
+                    <input
+                      type="radio"
+                      id="choice1"
+                      checked
+                      name="exhibition"
+                      value="permanent"
+                    />
+                    <label for="choice1">Permanent exhibition</label>
+                  </div>
+
+                  <div class="item">
+                    <input
+                      type="radio"
+                      id="choice2"
+                      name="exhibition"
+                      value="temporary"
+                    />
+                    <label for="choice2">Temporary exhibition</label>
+                  </div>
+
+                  <div class="item">
+                    <input
+                      type="radio"
+                      id="choice3"
+                      name="exhibition"
+                      value="combined"
+                    />
+                    <label for="choice3">Combined Admission</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="number">
+              <button
+                class="number-minus"
+                type="button"
+                onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"
+              >
+                -
+              </button>
+              <input type="number" min="0" value="1" readonly />
+              <button
+                class="number-plus"
+                type="button"
+                onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"
+              >
+                +
+              </button>
             </div>
           </div>
         </div>

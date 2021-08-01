@@ -28,14 +28,17 @@ body {
   --bg-dark: #151719;
   --dark-red: #710707;
   --font-gold: #9d8665;
-  --font1: 80px;
-  --font2: 32px;
+  --font80: 80px;
+  --font32: 32px;
+  --font28: 28px;
+  --font22: 22px;
+  --font18: 18px;
 }
 .section__title-dark {
   font-family: "Forum", cursive;
   font-style: normal;
   font-weight: normal;
-  font-size: var(--font1);
+  font-size: var(--font80);
   line-height: 90px;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -46,17 +49,23 @@ body {
   font-family: "Forum", cursive;
   font-style: normal;
   font-weight: normal;
-  font-size: var(--font1);
+  font-size: var(--font80);
   line-height: 90px;
   letter-spacing: 5px;
   text-transform: uppercase;
-  color: var(--font-gold);
+  color: #000000;
+}
+section:hover {
+  .section__title,
+  .section__title-dark {
+    color: var(--font-gold);
+  }
 }
 .text__explore {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 22px;
+  font-size: var(--font22);
   line-height: 38px;
 }
 
@@ -73,7 +82,7 @@ body {
       font-family: "Forum", cursive;
       font-style: normal;
       font-weight: normal;
-      font-size: 28px;
+      font-size: var(--font28);
       line-height: 50px;
       letter-spacing: 5px;
       text-transform: uppercase;
@@ -95,7 +104,7 @@ body {
         font-family: "Roboto", sans-serif;
         font-style: normal;
         font-weight: 200;
-        font-size: 22px;
+        font-size: var(--font22);
         line-height: 50px;
         letter-spacing: 2px;
         color: #ffffff;
@@ -115,6 +124,7 @@ body {
   background-image: url(../assets/img/background.jpg);
   background-repeat: no-repeat;
   background-position: right bottom;
+  padding-bottom: 171px;
   .title__welcome {
     margin-top: 114px;
   }
@@ -122,18 +132,19 @@ body {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 28px;
+    font-size: var(--font28);
     line-height: 33px;
     letter-spacing: 2px;
     color: #ffffff;
   }
   .button__welcome {
+    display: inline-block;
     a {
       text-decoration: none;
       font-family: "Roboto", sans-serif;
       font-style: normal;
       font-weight: 200;
-      font-size: 22px;
+      font-size: var(--font22);
       line-height: 26px;
       display: flex;
       align-items: center;
@@ -146,7 +157,11 @@ body {
       display: inline-block;
       margin-top: 48px;
       transition: 0.5s;
-      margin-bottom: 171px;
+    }
+  }
+  .button__welcome:hover {
+    a {
+      background: var(--font-gold);
     }
   }
 }
@@ -167,6 +182,7 @@ body {
     .cart__link {
       display: block;
       text-decoration: none;
+      transition: all 1s ease-in-out;
       img {
         width: 440px;
         height: 285px;
@@ -175,7 +191,7 @@ body {
         font-family: "Forum", cursive;
         font-style: normal;
         font-weight: normal;
-        font-size: var(--font2);
+        font-size: var(--font32);
         line-height: 35px;
         letter-spacing: 5px;
         text-transform: uppercase;
@@ -197,7 +213,7 @@ body {
         font-family: "Roboto", sans-serif;
         font-style: normal;
         font-weight: 200;
-        font-size: 22px;
+        font-size: var(--font22);
         line-height: 26px;
         color: #000000;
         margin-bottom: 0;
@@ -206,10 +222,15 @@ body {
         font-family: "Roboto", sans-serif;
         font-style: normal;
         font-weight: 200;
-        font-size: 18px;
+        font-size: var(--font18);
         line-height: 21px;
         color: #000000;
         margin-top: 0;
+      }
+    }
+    .cart__link:hover {
+      .underline__title::after {
+        right: 0;
       }
     }
   }
@@ -322,13 +343,32 @@ body {
     }
     .right__tickets {
       width: 50%;
-      .title__ticket {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 28px;
-        line-height: 33px;
-        color: #ffffff;
+      .radio-button {
+        display: inline-block;
+        margin-left: 60px;
+        .title__ticket {
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: var(--font28);
+          line-height: 33px;
+          color: #ffffff;
+          margin: 0;
+        }
+        .input-radio {
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: var(--font22);
+          line-height: 26px;
+          color: #ffffff;
+          .item {
+            margin-top: 50px;
+            label {
+              margin-left: 23px;
+            }
+          }
+        }
       }
     }
   }
