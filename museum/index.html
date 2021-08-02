@@ -134,9 +134,9 @@
 
       <section class="video video__section container" id="video">
         <img class="poster" src="./assets/img/Poster.jpg" alt="poster" />
-        <!-- <div class="button__play">
-          <img src="./assets/svg/Play.svg" alt="play" />
-        </div> -->
+        <span class="video-filter">
+          <img class="filter-span" src="./assets/img/Play.png" alt="play" />
+        </span>
 
         <div class="video__input">
           <div><img src="./assets/svg/Left.svg" alt="left" /></div>
@@ -225,24 +225,53 @@
                   </div>
                 </div>
               </form>
-            </div>
 
-            <div class="number">
-              <button
-                class="number-minus"
-                type="button"
-                onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"
-              >
-                -
-              </button>
-              <input type="number" min="0" value="1" readonly />
-              <button
-                class="number-plus"
-                type="button"
-                onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"
-              >
-                +
-              </button>
+              <form class="number-button">
+                <h4 class="title__ticket">Amount</h4>
+                <p class="age">Basic 18+</p>
+                <div class="number">
+                  <button
+                    class="number-minus"
+                    type="button"
+                    onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"
+                  >
+                    -
+                  </button>
+                  <input type="number" min="0" value="1" readonly />
+                  <button
+                    class="number-plus"
+                    type="button"
+                    onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"
+                  >
+                    +
+                  </button>
+                </div>
+
+                <p class="age">Senior 65+</p>
+                <div class="number">
+                  <button
+                    class="number-minus"
+                    type="button"
+                    onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"
+                  >
+                    -
+                  </button>
+                  <input type="number" min="0" value="1" readonly />
+                  <button
+                    class="number-plus"
+                    type="button"
+                    onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"
+                  >
+                    +
+                  </button>
+                </div>
+
+                <h4 class="title__ticket spacing">Total €220</h4>
+
+                <div class="button-tickets">
+                  <a href="#">Buy Now</a>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -308,8 +337,9 @@
             ><img src="./assets/svg/Instagram.svg" alt="Instagram"
           /></a>
           <a class="icon" href="#"
-            ><img src="./assets/svg/Facebook.svg" alt="Facebook"
-          /></a>
+            ><img src="./assets/svg/Facebook.svg" alt="Facebook" />
+            <span class="footer-filter"></span
+          ></a>
           <a class="icon" href="#"
             ><img src="./assets/svg/Twitter.svg" alt="Twitter"
           /></a>
