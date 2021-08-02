@@ -159,7 +159,7 @@ section:hover .section__title-dark {
   background-image: url(../assets/img/background.jpg);
   background-repeat: no-repeat;
   background-position: right bottom;
-  padding-bottom: 171px;
+  padding-bottom: 169px;
 }
 
 .welcome .title__welcome {
@@ -208,6 +208,7 @@ section:hover .section__title-dark {
 .visiting .underline__section-title {
   padding-bottom: 25px;
   border-bottom: solid 3px var(--dark-red);
+  margin-top: 0;
 }
 
 .visiting .cart__visiting {
@@ -219,7 +220,7 @@ section:hover .section__title-dark {
       flex-wrap: wrap;
   -webkit-column-gap: 60px;
           column-gap: 60px;
-  row-gap: 78px;
+  row-gap: 68px;
 }
 
 .visiting .cart__visiting .cart__link {
@@ -291,7 +292,7 @@ section:hover .section__title-dark {
 
 .explore .container__explore .explore__left .section__title-dark {
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 125px;
 }
 
 .explore .container__explore .explore__left .section__title-dark::after {

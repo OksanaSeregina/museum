@@ -138,7 +138,7 @@ section:hover {
   background-image: url(../assets/img/background.jpg);
   background-repeat: no-repeat;
   background-position: right bottom;
-  padding-bottom: 171px;
+  padding-bottom: 169px;
   .title__welcome {
     margin-top: 114px;
   }
@@ -182,13 +182,14 @@ section:hover {
   .underline__section-title {
     padding-bottom: 25px;
     border-bottom: solid 3px var(--dark-red);
+    margin-top: 0;
   }
   .cart__visiting {
     max-width: 1440px;
     display: flex;
     flex-wrap: wrap;
     column-gap: 60px;
-    row-gap: 78px;
+    row-gap: 68px;
     .cart__link {
       display: block;
       text-decoration: none;
@@ -252,7 +253,7 @@ section:hover {
       padding-right: 60px;
       .section__title-dark {
         position: relative;
-        margin-bottom: 100px;
+        margin-bottom: 125px;
       }
       .section__title-dark::after {
         content: "";
