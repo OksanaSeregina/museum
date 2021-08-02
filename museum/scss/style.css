@@ -362,6 +362,11 @@ section:hover .section__title-dark {
   width: 100%;
 }
 
+.video .video__input .control {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
 .video .text__video {
   display: -webkit-box;
   display: -ms-flexbox;
